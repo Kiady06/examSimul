@@ -80,7 +80,7 @@ h1 > span {
     background-color: var(--color-bg-warm);
     width: 90vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     padding: 3ch 5ch;
     border-radius: 20px;
@@ -88,6 +88,11 @@ h1 > span {
 
 fieldset {
     border: none;
+}
+
+.flag-selector {
+    display: flex;
+    gap: 1ch;
 }
 
 .flag-selector input[type="radio"] {
@@ -98,7 +103,6 @@ fieldset {
 
 .flag-selector label {
     display: inline-block;
-    padding: 1ch;
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -112,6 +116,9 @@ input[type="radio"]:checked + label {
 .filter-label {
     color: var(--color-text-muted);
     margin-bottom: 1ch;
+    text-transform: uppercase;
+    font-family: "DM Sans";
+    font-size: 0.8rem;
 }
 
 .filter-group {
@@ -119,11 +126,91 @@ input[type="radio"]:checked + label {
     flex-direction: column;
 }
 
-.filter-select {
+.price-header {
+    display: flex;
+    gap: 2ch;
+    align-items: center;
+}
+
+.range-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-value {
+    font-family: "DM Sans";
+    font-size: 0.9em;
+    margin-bottom: 0.5ch;
+    color: var(--color-red);
+}
+
+.range-container input[type="range"] {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+}
+
+.range-container input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--color-red-dark);
+  border-radius: 10px;
+}
+
+.range-container input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--color-red-dark);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.range-container input[type="range"]::-moz-range-track {
+    background-color: var(--color-red);
+    border-radius: 20px;
+    height: 8px;
+    border: 1px solid var(--color-text-muted);
+}
+
+.range-container input[type="range"]::-moz-range-thumb {
+    background-color: var(--color-red);
+    border: none;
+    cursor: pointer;
+}
+
+.filter-select option {
+    font-family: "DM Sans";
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.filter-select, .filter-bar input[type="text"] {
     background-color: var(--color-bg-white);
     border: 1px solid var(--color-border-light);
     font-family: "DM Sans";
     padding: 1ch;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.filter-bar input[type="text"] {
+    text-align: start;
+    font-weight: 500;
+    padding-left: 2.5ch;
+}
+
+.clear-btn {
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    font-family: "DM Sans";
+    color: var(--color-text-muted);
+    align-self: center;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 
 h1 {
@@ -135,4 +222,5 @@ h1 {
 p {
     font-family: "DM Sans", sans-serif;
     color: var(--color-text-dark);
+    font-weight: 300;
 }
