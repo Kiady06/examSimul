@@ -15,6 +15,8 @@
 
     --color-border: #e5e0d8;
     --color-border-light: #f0ece4;
+
+    font-family: "DM Sans";
 }
 
 * {
@@ -24,9 +26,11 @@
 }
 
 header {
-    height: 20vh;
+    height: 10vh;
     width: 100vw;
     background-color: var(--color-red-dark);
+    position: fixed;
+    z-index: 1;
 }
 
 main {
@@ -213,6 +217,127 @@ input[type="radio"]:checked + label {
     cursor: pointer;
 }
 
+.filter-result {
+    margin: 2ch 0;
+    color: var(--color-text-muted);
+}
+
+.course-cards {
+    width: 90vw;
+}
+
+.cards-container {
+    margin-top: 5ch;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5ch;
+}
+
+.course-card {
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.card-header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-top {
+    position: absolute;
+    top: 15px;
+    margin-left: 2ch;
+    display: flex;
+    gap: 1ch;
+}
+
+.badge {
+    border-radius: 50px;
+    padding: 1ch;
+    font-family: "DM Sans";
+}
+
+.badge-leng {
+    background-color: var(--color-bg-white);
+    border-radius: 18px;
+}
+
+.badge-tech {
+    background-color: var(--color-text-dark);
+    color: var(--color-bg-white);
+}
+
+.badge-level {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    background-color: yellowgreen;
+    color: var(--color-bg-white);
+    padding: 0.6ch 2ch;
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-bg-warm);
+    border: none;
+}
+
+.card-body {
+    padding-top: 1ch;
+}
+
+.card-body > h3 {
+    margin-top: 0.5ch;
+}
+
+.card-body > p {
+    padding-top: 1ch;
+    font-weight: 500;
+    letter-spacing: 0.005ch;
+}
+
+.card-footer {
+    display: flex;
+    margin-top: 2ch;
+    padding-bottom: 2ch;
+    gap: 2ch;
+    justify-content: flex-end;
+}
+
+.card-footer button {
+    border: none;
+    padding: 2ch;
+    font-family: 'DM Sans';
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.btn-secondary {
+    background-color: var(--color-bg-white);
+    color: var(--color-red);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    color: var(--color-bg-white);
+    background-color: var(--color-red);
+}
+
 h1 {
     font-size: 4rem;
     font-family: "Playfair Display", serif;
@@ -223,4 +348,14 @@ p {
     font-family: "DM Sans", sans-serif;
     color: var(--color-text-dark);
     font-weight: 300;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    color: var(--color-red);
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-family: "DM Sans";
 }
