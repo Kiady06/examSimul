@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="courses.css" />
+    <title>Courses</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Waiting for the pull -->
+      </nav>
+    </header>
+    <main>
+      <section class="heroText">
+        <div class="muted">
+          <div class="line"></div>
+          <p class="muted-text">LEARNING</p>
+          <div class="line"></div>
+        </div>
+        <h1>All <span>courses</span></h1>
+        <p>
+          Online and offline courses across development, translation, and
+          research. Find the one that fits your level and goals.
+        </p>
+      </section>
+
+      <form class="filter-bar">
+        <fieldset class="filter-group">
+          <legend class="filter-label">Language</legend>
+
+          <div class="flag-selector">
+            <input type="radio" name="language" id="lang-mg" value="mg" />
+            <label for="lang-mg">🇲🇬</label>
+
+            <input type="radio" name="language" id="lang-fr" value="fr" />
+            <label for="lang-fr">🇫🇷</label>
+
+            <input type="radio" name="language" id="lang-en" value="en" />
+            <label for="lang-en">🇺🇸</label>
+          </div>
+        </fieldset>
+        <div class="filter-group">
+          <label for="tech-select" class="filter-label">Technology</label>
+          <select class="filter-select" id="tech-select" name="tech">
+            <option value="">All technologies</option>
+            <option value="javascript">JavaScript</option>
+            <option value="java">Java</option>
+            <option value="sql">SQL</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="level-select" class="filter-label">Level</label>
+          <select class="filter-select" id="level-select" name="level">
+            <option value="">All levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="master">Master</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <div class="price-header">
+            <label for="price-min" class="filter-label">Price Range</label>
+            <span class="price-value">0 Ar – 300,000 Ar</span>
+          </div>
+          <div class="range-container">
+            <input
+              type="range"
+              id="price-min"
+              name="price-min"
+              min="0"
+              max="300000"
+              value="0"
+              class="price-slider"
+            />
+            <input
+              type="range"
+              id="price-max"
+              name="price-max"
+              min="0"
+              max="300000"
+              value="300000"
+              class="price-slider"
+            />
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label for="search-input" class="filter-label">Search</label>
+          <input
+            type="text"
+            id="search-input"
+            name="search"
+            placeholder="Keywords..."
+          />
+        </div>
+
+        <button type="reset" class="clear-btn">Clear all</button>
+      </form>
+      <hr />
+      <section class="course-cards">
+        <p class="filter-result">9 curses found</p>
+        <div class="cards-container">
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/250/400" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+            <article class="course-card">
+              <div class="card-header">
+                <div class="badge-top">
+                  <span class="badge badge-leng">EN</span>
+                  <span class="badge badge-tech">javascript</span>
+                </div>
+                <img src="https://picsum.photos/200/300" alt="" />
+                <span class="badge-level">beginner</span>
+              </div>
+              <div class="card-body">
+                <h2 class="course-name">Javascript for beginners</h2>
+                <h3 class="course-price">MGA 120,000</h3>
+                <p class="course-description">
+                  JavaScript made easy as your first language. This video walks
+                  you through the basic mechanism of algorithms, loops. conditions, function, JS module...
+                </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn-secondary">Learn more</button>
+                <button class="btn-primary">Add to cart</button>
+              </div>
+            </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
